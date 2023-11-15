@@ -15,16 +15,16 @@ const Navbar = () => {
                     <button className="nav-link">Explore</button>
                 </li>
                 <li className="nav-item">
-                    <button className="nav-link" href="/">Dashboard</button>
+                    <button className="nav-link" >Dashboard</button>
                 </li>
                 <li className="nav-item">
-                    <button className="nav-link" href="/">My Challenges</button>
+                    <button className="nav-link" >My Challenges</button>
                 </li>
                 <li className="nav-item">
-                    <button className="nav-link" href="/">My Labs</button>
+                    <button className="nav-link" >My Labs</button>
                 </li>
                 <li className="nav-item">
-                    <button className="nav-link" href="/">Career Explorer</button>
+                    <button className="nav-link" >Career Explorer</button>
                 </li>
             </ul>
             <i class="bi bi-bell-fill"></i>

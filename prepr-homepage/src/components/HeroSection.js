@@ -1,8 +1,11 @@
 import React from 'react'
+import Tag from './Tag'
 
 const HeroSection = () => {
-    const tags = <div>Tag</div>
-  return (
+    // map tag titles onto screen 
+    const tags = ['Communication', 'Accessibility', 'Business Innovation', 'Plugins', 'QA', 'Android Development', 'Budgeting', 'System Administration', 'Digital Tools', 'Transparency']
+  
+    return (
     <div className='text-center' style={{backgroundImage: 'linear-gradient(to right, lightcyan, lightblue)', height: '40rem'}}>
         <div className='container' style={{padding:'5rem'}}>
             <h1 className='fw-bolder'>Explore Your Interests</h1>
@@ -18,7 +21,7 @@ const HeroSection = () => {
                 </div>
             </div>
             <h2 className='mt-3 mb-5 fw-semibold'>Click an interest to narrow your <br></br>recommendations.</h2>
-            {tags}
+            {tags.map(tag => <Tag title={tag}/>)}
 
         </div>
     </div>

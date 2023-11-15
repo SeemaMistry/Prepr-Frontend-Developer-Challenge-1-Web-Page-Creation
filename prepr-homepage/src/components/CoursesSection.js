@@ -13,10 +13,10 @@ const CoursesSection = ({filteredCourses, onChange}) => {
     return (
     <div className='container'>
         <div className='text-center'>
-            <button className={`btn btn-lg ${selectedCategory === 'labs' ? 'btn-primary' : '' }`} id='labs' onClick={setCatergoryHandler}>Labs</button>
-            <button className={`btn btn-lg ${selectedCategory === 'challenges' ? 'btn-primary' : '' }`} id='challenges' onClick={setCatergoryHandler}>Challenges</button>
-            <button className='btn btn-lg'>Resources</button>
-            <button className={`btn btn-lg ${selectedCategory === 'projects' ? 'btn-primary' : '' }`} id='projects' onClick={setCatergoryHandler}>Projects</button>
+            <button className={`btn btn-lg ${selectedCategory === 'labs' ? 'btn-primary' : 'bg-light' }`} id='labs' onClick={setCatergoryHandler}>Labs</button>
+            <button className={`btn btn-lg ${selectedCategory === 'challenges' ? 'btn-primary' : 'bg-light' }`} id='challenges' onClick={setCatergoryHandler}>Challenges</button>
+            <button className='btn btn-lg bg-light'>Resources</button>
+            <button className={`btn btn-lg ${selectedCategory === 'projects' ? 'btn-primary' : 'bg-light' }`} id='projects' onClick={setCatergoryHandler}>Projects</button>
         </div>
         <div className='row'>
             <div className="col-2 mx-5 p-10">

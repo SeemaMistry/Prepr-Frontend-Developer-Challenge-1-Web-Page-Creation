@@ -20,13 +20,13 @@ const CourseCard = ({course}) => {
     <div className="card mb-3" style={{maxWidth: '100%'}}>
         <div className="row g-0">
             <div className="col-md-4">
-                <img src={courseImg} className="img-fluid rounded-start" alt="..."/>
+                <img src={courseImg} className="img-fluid rounded-start" alt="course title page"/>
             </div>
             <div className="col-md-8">
                 <div className="card-body">
                     <h5 className="card-title">{course.title}</h5>
                     <p className="card-text">
-                        <img src={logoIcon} className="img-fluid rounded-start"/>
+                        <img src={logoIcon} className="img-fluid rounded-start" alt="category logo"/>
                         <small className="text-body-secondary">{course.category}</small>
                     </p>
                     <p className="card-text">{course.description}</p> 

@@ -27,9 +27,12 @@ const Navbar = () => {
                     <a className="nav-link" href="/">Career Explorer</a>
                 </li>
 
+
                 
             </ul>
-            <img><i class="bi bi-chat-left-fill"></i></img>
+            <i class="bi bi-bell-fill"></i>
+            <i class="bi bi-chat-left-fill"></i>
+            <i class="bi bi-question-circle-fill"></i>
             <form className="d-flex" role="search">
                 <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
                 <button className="btn btn-outline-success" type="submit">Search</button>

@@ -35,9 +35,9 @@ const CoursesSection = ({filteredCourses, onChange}) => {
                                 Relevance
                             </button>
                             <ul className="dropdown-menu">
-                                <li><a className="dropdown-item" href="#">Menu item</a></li>
-                                <li><a className="dropdown-item" href="#">Menu item</a></li>
-                                <li><a className="dropdown-item" href="#">Menu item</a></li>
+                                <li><button className="dropdown-item" >Menu item</button></li>
+                                <li><button className="dropdown-item" >Menu item</button></li>
+                                <li><button className="dropdown-item" >Menu item</button></li>
                             </ul>
                         </div>
 
@@ -45,7 +45,7 @@ const CoursesSection = ({filteredCourses, onChange}) => {
                 </div>
                 <div>
                     Conditionally rendered CourseCards
-                    {filteredCourses.map(item => <CourseCard course={item}/>)}
+                    {filteredCourses.map(item => <CourseCard key={item.id} course={item}/>)}
                 </div>
             </div>
         </div>

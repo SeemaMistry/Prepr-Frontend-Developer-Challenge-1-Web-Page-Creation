@@ -3,19 +3,20 @@ import React, {useState} from 'react'
 const CoursesSection = ({filteredCourses, onChange}) => {
     // TODO: conditionally add btn-primary class to clicked buttons using useState
   
-    const [selectedCategory, setSelectedCategory] = useState()
+    const [selectedCategory, setSelectedCategory] = useState('labs')
 
     const setCatergoryHandler = (e) => {
         onChange(e.target.id)
+        setSelectedCategory(e.target.id)
     }
   
     return (
     <div className='container'>
         <div className='text-center'>
-            <button className='btn btn-lg btn-primary' id='labs' onClick={setCatergoryHandler}>Labs</button>
-            <button className='btn btn-lg' id='challenges' onClick={setCatergoryHandler}>Challenges</button>
+            <button className={`btn btn-lg ${selectedCategory === 'labs' ? 'btn-primary' : '' }`} id='labs' onClick={setCatergoryHandler}>Labs</button>
+            <button className={`btn btn-lg ${selectedCategory === 'challenges' ? 'btn-primary' : '' }`} id='challenges' onClick={setCatergoryHandler}>Challenges</button>
             <button className='btn btn-lg'>Resources</button>
-            <button className='btn btn-lg' id='projects' onClick={setCatergoryHandler}>Projects</button>
+            <button className={`btn btn-lg ${selectedCategory === 'projects' ? 'btn-primary' : '' }`} id='projects' onClick={setCatergoryHandler}>Projects</button>
         </div>
         <div className='row'>
             <div className="col-2 mx-5 p-10">

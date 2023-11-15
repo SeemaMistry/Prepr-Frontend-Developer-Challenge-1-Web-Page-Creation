@@ -3,6 +3,7 @@ import courseImg from '../assets/preprLogo.png'
 import labLogo from '../assets/lab_icon.svg'
 import projectLogo from '../assets/project_icon.svg'
 import challengeLogo from '../assets/challenge_icon.svg'
+import Tag from './Tag'
 
 const CourseCard = ({course}) => {
     // Course Object values
@@ -15,6 +16,8 @@ const CourseCard = ({course}) => {
 
     // set logoIcon by category type
     const logoIcon = course.category === 'labs' ? labLogo : course.category === 'challenges' ? challengeLogo : projectLogo
+
+
   return (
     <>
     <div className="card mb-3" style={{maxWidth: '100%'}}>
@@ -30,6 +33,9 @@ const CourseCard = ({course}) => {
                         <small className="text-body-secondary">{course.category}</small>
                     </p>
                     <p className="card-text">{course.description}</p> 
+                    <p>
+                        {course.tags.map(tag => <Tag key={`${course.id}-${tag}`} title={tag}/>)}
+                    </p>
                 </div>
             </div>
         </div>

@@ -15,12 +15,24 @@ const CoursesSection = () => {
                 Conditionally rendered Side Menus 
             </div>
             <div className="col-9">
-                <div className="d-flex justify-content-between" style={{backgroundColor: ''}}>
+                <div className="d-flex justify-content-between p-4 rounded shadow" style={{backgroundColor: 'lightgrey'}}>
                     <form className='d-flex' role="search">
                         <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
                         <button className="btn btn-outline-success" type="button">Search</button>
                     </form>
-                    <span>Sort by</span>
+                    <span>Sort by
+                        <div className="m-2 btn-group">
+                            <button className=" btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Relevance
+                            </button>
+                            <ul className="dropdown-menu">
+                                <li><a className="dropdown-item" href="#">Menu item</a></li>
+                                <li><a className="dropdown-item" href="#">Menu item</a></li>
+                                <li><a className="dropdown-item" href="#">Menu item</a></li>
+                            </ul>
+                        </div>
+
+                    </span>
                 </div>
                 <div>Conditionally rendered CourseCards</div>
             </div>

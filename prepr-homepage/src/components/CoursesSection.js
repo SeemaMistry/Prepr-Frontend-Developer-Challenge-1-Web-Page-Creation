@@ -5,15 +5,6 @@ const CoursesSection = ({filteredCourses, onChange}) => {
   
     const [selectedCategory, setSelectedCategory] = useState()
 
-//   const setLabCategoryHandler = () => {
-//     onChange('labs')
-//   }
-//   const setChanllengesCategoryHandler = () => {
-//     onChange('challenges')
-//   }
-//   const setProjectsCategoryHandler = () => {
-//     onChange('projects')
-//   }
     const setCatergoryHandler = (e) => {
         onChange(e.target.id)
     }

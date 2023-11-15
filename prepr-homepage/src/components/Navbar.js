@@ -12,23 +12,20 @@ const Navbar = () => {
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                 <li className="nav-item">
-                    <a className="nav-link " aria-current="page" href="/">Explore</a>
+                    <button className="nav-link">Explore</button>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" href="/">Dashboard</a>
+                    <button className="nav-link" href="/">Dashboard</button>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" href="/">My Challenges</a>
+                    <button className="nav-link" href="/">My Challenges</button>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" href="/">My Labs</a>
+                    <button className="nav-link" href="/">My Labs</button>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" href="/">Career Explorer</a>
+                    <button className="nav-link" href="/">Career Explorer</button>
                 </li>
-
-
-                
             </ul>
             <i class="bi bi-bell-fill"></i>
             <i class="bi bi-chat-left-fill"></i>

@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import CourseCard from './CourseCard'
 
 const CoursesSection = ({filteredCourses, onChange}) => {
     // TODO: conditionally add btn-primary class to clicked buttons using useState
@@ -44,12 +45,7 @@ const CoursesSection = ({filteredCourses, onChange}) => {
                 </div>
                 <div>
                     Conditionally rendered CourseCards
-                    {filteredCourses.map(item => 
-                        <div>
-                            <h1>{item.title}</h1>
-                            <p>{item.description}</p>
-                        </div>
-                        )}
+                    {filteredCourses.map(item => <CourseCard course={item}/>)}
                 </div>
             </div>
         </div>

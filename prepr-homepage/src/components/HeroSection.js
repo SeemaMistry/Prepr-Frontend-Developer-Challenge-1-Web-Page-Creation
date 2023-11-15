@@ -21,7 +21,7 @@ const HeroSection = () => {
                 </div>
             </div>
             <h2 className='mt-3 mb-5 fw-semibold'>Click an interest to narrow your <br></br>recommendations.</h2>
-            {tags.map(tag => <Tag title={tag}/>)}
+            {tags.map(tag => <Tag key={`hero-tag-${tag}`}  title={tag}/>)}
 
         </div>
     </div>

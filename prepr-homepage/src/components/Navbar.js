@@ -1,9 +1,12 @@
 import React from 'react'
 import logo from '../assets/preprLogo.png'
 
+
 const Navbar = () => {
+    // TODO: add dark theme using bootstrap property data-bs-theme="dark"
+    // TODO: change icon colour to light during dark mode
   return (
-    <nav className="navbar navbar-expand-lg bg-body-tertiary">
+    <nav className="navbar navbar-expand-lg bg-body-tertiary" >
         <div className="container-fluid">
             <a className="navbar-brand" href="#"><img src={logo} alt='Prepr Logo'/></a>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,17 +31,17 @@ const Navbar = () => {
                 </li>
             </ul>
             <div style={{fontSize: '25px'}}>
-                <i class="bi bi-bell-fill mx-2"></i>
-                <i class="bi bi-chat-left-fill mx-2"></i>
-                <i class="bi bi-question-circle-fill mx-2"></i>
+                <i className="bi bi-bell-fill mx-2"></i>
+                <i className="bi bi-chat-left-fill mx-2"></i>
+                <i className="bi bi-question-circle-fill mx-2"></i>
             </div>
             <form className="d-flex" role="search">
                 <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
                 <button className="btn btn-outline-success" type="submit">Search</button>
             </form>
             <div style={{fontSize: '25px'}}>
-                <i class="bi bi-person-square mx-2"></i>
-                <i class="bi bi-grid-3x3-gap-fill mx-2"></i>
+                <i className="bi bi-person-square mx-2"></i>
+                <i className="bi bi-grid-3x3-gap-fill mx-2"></i>
             </div>
             </div>
         </div>

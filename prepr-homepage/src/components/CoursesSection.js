@@ -18,7 +18,7 @@ const CoursesSection = () => {
                 <div className="d-flex justify-content-between" style={{backgroundColor: ''}}>
                     <form className='d-flex' role="search">
                         <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-                        <button className="btn btn-outline-success" type="submit">Search</button>
+                        <button className="btn btn-outline-success" type="button">Search</button>
                     </form>
                     <span>Sort by</span>
                 </div>

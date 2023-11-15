@@ -1,14 +1,25 @@
 import React from 'react'
 
-const CoursesSection = () => {
+const CoursesSection = ({filteredCourses, onChange}) => {
     // TODO: conditionally add btn-primary class to clicked buttons using useState
-  return (
+  
+  const setLabCategoryHandler = () => {
+    onChange('labs')
+  }
+  const setChanllengesCategoryHandler = () => {
+    onChange('challenges')
+  }
+  const setProjectsCategoryHandler = () => {
+    onChange('projects')
+  }
+  
+    return (
     <div className='container'>
         <div className='text-center'>
-            <button className='btn btn-lg btn-primary'>Labs</button>
-            <button className='btn btn-lg'>Challenges</button>
+            <button className='btn btn-lg btn-primary' onClick={setLabCategoryHandler}>Labs</button>
+            <button className='btn btn-lg' onClick={setChanllengesCategoryHandler}>Challenges</button>
             <button className='btn btn-lg'>Resources</button>
-            <button className='btn btn-lg'>Projects</button>
+            <button className='btn btn-lg' onClick={setProjectsCategoryHandler}>Projects</button>
         </div>
         <div className='row'>
             <div className="col-2 mx-5 p-10">
@@ -34,7 +45,10 @@ const CoursesSection = () => {
 
                     </span>
                 </div>
-                <div>Conditionally rendered CourseCards</div>
+                <div>
+                    Conditionally rendered CourseCards
+                    {}
+                </div>
             </div>
         </div>
     </div>

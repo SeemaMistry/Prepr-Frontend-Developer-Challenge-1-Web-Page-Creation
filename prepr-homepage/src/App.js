@@ -52,11 +52,18 @@ const ALL_CONTENT = [
 ]
 
 function App() {
+  const [selectedContent, setSelectedContent] = useState('labs')
+
+  const onChangeHandler = (category) => setSelectedContent(category)
+
+  console.log(selectedContent)
+
+
   return (
     <>
     <Navbar />
     <HeroSection/>
-    <CoursesSection />
+    <CoursesSection state={selectedContent} onChange={onChangeHandler} filteredCourses={ALL_CONTENT}/>
     <div className="m-5">placeholder div for testing scroll</div>
     <div className="m-5">placeholder div for testing scroll</div>
     <div className="m-5">placeholder div for testing scroll</div>

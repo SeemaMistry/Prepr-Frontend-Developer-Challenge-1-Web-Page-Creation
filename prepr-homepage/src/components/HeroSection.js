@@ -3,8 +3,8 @@ import React from 'react'
 const HeroSection = () => {
     const tags = <div>Tag</div>
   return (
-    <div className='text-center' style={{backgroundImage: 'linear-gradient(to right, lightcyan, lightblue)', height: '30rem'}}>
-        <div style={{padding:'5rem'}}>
+    <div className='text-center' style={{backgroundImage: 'linear-gradient(to right, lightcyan, lightblue)', height: '40rem'}}>
+        <div style={{padding:'10rem'}}>
             <h1 className='fw-bolder'>Hero Section</h1>
             <p className='mt-3 mb-5'>A description of what this site is</p>
             <div class="input-group mt-3 mb-5">

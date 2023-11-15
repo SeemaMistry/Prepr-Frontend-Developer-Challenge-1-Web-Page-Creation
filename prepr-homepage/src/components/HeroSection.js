@@ -2,8 +2,8 @@ import React from 'react'
 
 const HeroSection = () => {
   return (
-    <div className='bg-primary text-center'>
-        <h1 className='p-2 mt-10'>Hero Section</h1>
+    <div className='text-center' style={{backgroundImage: 'linear-gradient(to right, lightcyan, lightblue)', height: '30rem'}}>
+        <h1>Hero Section</h1>
     </div>
   )
 }

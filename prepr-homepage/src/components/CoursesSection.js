@@ -47,7 +47,12 @@ const CoursesSection = ({filteredCourses, onChange}) => {
                 </div>
                 <div>
                     Conditionally rendered CourseCards
-                    {}
+                    {filteredCourses.map(item => 
+                        <div>
+                            <h1>{item.title}</h1>
+                            <p>{item.description}</p>
+                        </div>
+                        )}
                 </div>
             </div>
         </div>

@@ -58,12 +58,14 @@ function App() {
 
   console.log(selectedContent)
 
+  // filter courses by state
+  const filteredCourses = ALL_CONTENT.filter(item => item.category === selectedContent)
 
   return (
     <>
     <Navbar />
     <HeroSection/>
-    <CoursesSection state={selectedContent} onChange={onChangeHandler} filteredCourses={ALL_CONTENT}/>
+    <CoursesSection state={selectedContent} onChange={onChangeHandler} filteredCourses={filteredCourses}/>
     <div className="m-5">placeholder div for testing scroll</div>
     <div className="m-5">placeholder div for testing scroll</div>
     <div className="m-5">placeholder div for testing scroll</div>

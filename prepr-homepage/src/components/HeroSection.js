@@ -4,17 +4,20 @@ const HeroSection = () => {
     const tags = <div>Tag</div>
   return (
     <div className='text-center' style={{backgroundImage: 'linear-gradient(to right, lightcyan, lightblue)', height: '40rem'}}>
-        <div style={{padding:'10rem'}}>
-            <h1 className='fw-bolder'>Hero Section</h1>
-            <p className='mt-3 mb-5'>A description of what this site is</p>
-            <div class="input-group mt-3 mb-5">
+        <div className='container' style={{padding:'5rem'}}>
+            <h1 className='fw-bolder'>Explore Your Interests</h1>
+            <p className='mt-3 mb-5'>
+                We’ll recommend content based on your interests we’ve listed here.<br></br>
+                Feel free to add or remove topics to customize your experience!
+            </p>
+            <div class="input-group mb-5 mt-5">
                 <span class="input-group-text"><i class="bi bi-search"></i></span>
                 <div class="form-floating">
                     <input type="text" class="form-control" id="floatingInputGroup2" placeholder="Username" required/>
                     <label for="floatingInputGroup2">Search skills</label>
                 </div>
             </div>
-            <h2 className='mt-3 mb-5 fw-semibold'>Click Here for more recommendations</h2>
+            <h2 className='mt-3 mb-5 fw-semibold'>Click an interest to narrow your <br></br>recommendations.</h2>
             {tags}
 
         </div>

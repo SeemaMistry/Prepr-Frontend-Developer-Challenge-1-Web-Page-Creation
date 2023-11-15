@@ -6,11 +6,11 @@ const CoursesSection = () => {
         <div>
             Buttons Menu
         </div>
-        <div> Bootstrap Grid to set menus and coursecards at column aspect ratio of 2:9
-            <div>
+        <div className='row'>
+            <div className="col-2 mx-5 p-10 ">
                 Conditionally rendered Side Menus 
             </div>
-            <div>
+            <div className="col-9 ">
                 <div>Search Bar</div>
                 <div>Conditionally rendered CourseCards</div>
             </div>

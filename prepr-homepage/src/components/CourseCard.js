@@ -16,6 +16,7 @@ const CourseCard = ({course}) => {
 
     // set logoIcon by category type
     const logoIcon = course.category === 'labs' ? labLogo : course.category === 'challenges' ? challengeLogo : projectLogo
+    const categoryTitle = course.category === 'labs' ? 'Public Lab' : course.category === 'challenges' ? "Pubic Challenge" : "Public"
 
 
   return (
@@ -30,7 +31,7 @@ const CourseCard = ({course}) => {
                     <h5 className="card-title">{course.title}</h5>
                     <p className="card-text">
                         <img src={logoIcon} className="img-fluid rounded-start" alt="category logo"/>
-                        <small className="text-body-secondary">{course.category}</small>
+                        <span className="mx-2 text-body-dark fw-bolder">{categoryTitle}</span>
                     </p>
                     <p className="card-text">{course.description}</p> 
                     <p>

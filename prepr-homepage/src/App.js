@@ -8,6 +8,7 @@ import {ALL_CONTENT} from './data'
 
 
 function App() {
+  // state determines which category of course-cards to display out of 3 categories: labs, challenges, projects
   const [selectedContent, setSelectedContent] = useState('labs')
 
   const onChangeHandler = (category) => setSelectedContent(category)

@@ -16,17 +16,17 @@ function App() {
   const filteredCourses = ALL_CONTENT.filter(item => item.category === selectedContent)
 
   return (
-    <>
-    <Navbar />
-    <HeroSection/>
-    <CoursesSection state={selectedContent} onChange={onChangeHandler} filteredCourses={filteredCourses}/>
-    <div className="m-5">placeholder div for testing scroll</div>
-    <div className="m-5">placeholder div for testing scroll</div>
-    <div className="m-5">placeholder div for testing scroll</div>
-    <div className="m-5">placeholder div for testing scroll</div>
-    <div className="m-5">placeholder div for testing scroll</div>
+    <div style={{backgroundColor: '#f3f7fc'}}>
+      <Navbar />
+      <HeroSection/>
+      <CoursesSection state={selectedContent} onChange={onChangeHandler} filteredCourses={filteredCourses}/>
+      <div className="m-5">placeholder div for testing scroll</div>
+      <div className="m-5">placeholder div for testing scroll</div>
+      <div className="m-5">placeholder div for testing scroll</div>
+      <div className="m-5">placeholder div for testing scroll</div>
+      <div className="m-5">placeholder div for testing scroll</div>
 
-    </>
+    </div>
   );
 }
 

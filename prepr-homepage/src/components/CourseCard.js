@@ -24,15 +24,17 @@ const CourseCard = ({course}) => {
     <div className="card mb-3" style={{maxWidth: '100%'}}>
         <div className="row g-0">
             <div className="col-md-4">
-                <img src={course.imgSrc} className="img-fluid rounded-start mx-2 my-2" alt="course title page"/>
-                <p className='mx-3'>
-                    0 <i className="bi bi-heart"></i> 
-                    &nbsp; &nbsp; &nbsp;
-                    0 <i className="bi bi-share-fill"></i>
-                </p>
-                <p className="mx-2 text-body-dark ">Hosted by <span className="fw-bold text-body-dark ">{course.host}</span></p>
+                <div className='p-3'>
+                    <img src={course.imgSrc} className="img-fluid rounded-start " alt="course title page"/>
+                    <p className='mx-3'>
+                        0 <i className="bi bi-heart"></i> 
+                        &nbsp; &nbsp; &nbsp;
+                        0 <i className="bi bi-share-fill"></i>
+                    </p>
+                    <p className="mx-2 text-body-dark ">Hosted by <span className="fw-bold text-body-dark ">{course.host}</span></p>
+                </div>
             </div>
-            <div className="col-md-8">
+            <div className="col-md-8" >
                 <div className="card-body">
                     <div className='d-flex justify-content-between'>
                         <h5 className="card-title">{course.title}</h5>

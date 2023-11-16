@@ -14,7 +14,7 @@ const CoursesSection = ({filteredCourses, onChange}) => {
     }
   
     return (
-    <div className='container'>
+    <div className='container-xxl'>
        <CategoryMenu onChange={setCatergoryHandler} selectedCategory={selectedCategory} />
         <div className='row'>
             <div className="col-2 mx-5 p-10">

@@ -13,9 +13,9 @@ const FilterSection = () => {
                     Relevance
                 </button>
                 <ul className="dropdown-menu">
-                    <li><button className="dropdown-item" >Menu item</button></li>
-                    <li><button className="dropdown-item" >Menu item</button></li>
-                    <li><button className="dropdown-item" >Menu item</button></li>
+                    <li><button className="dropdown-item" >Recently Added</button></li>
+                    <li><button className="dropdown-item" >Most Popular</button></li>
+
                 </ul>
             </div>
         </span>

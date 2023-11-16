@@ -20,7 +20,7 @@ function App() {
     <div style={{backgroundColor: '#f3f7fc'}}>
       <Navbar />
       <HeroSection/>
-      <CoursesSection state={selectedContent} onChange={onChangeHandler} filteredCourses={filteredCourses}/>
+      <CoursesSection onChange={onChangeHandler} filteredCourses={filteredCourses}/>
     </div>
   );
 }

@@ -34,7 +34,10 @@ const CourseCard = ({course}) => {
             </div>
             <div className="col-md-8">
                 <div className="card-body">
-                    <h5 className="card-title">{course.title}</h5>
+                    <div className='d-flex justify-content-between'>
+                        <h5 className="card-title">{course.title}</h5>
+                        {course.category === 'labs' ? <button className='btn btn-primary'>+ Follow</button> : ''}
+                    </div>
                     <p className="card-text">
                         <img src={logoIcon} className="img-fluid rounded-start" alt="category logo"/>
                         <span className="mx-2 text-body-dark fw-bolder">{categoryTitle}</span>

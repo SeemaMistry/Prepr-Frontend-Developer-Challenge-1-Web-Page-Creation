@@ -26,10 +26,14 @@ const CoursesSection = ({state, filteredCourses, onChange}) => {
                 </div>
 
                 {/* accordian section starts */}
-                <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion accordion-flush shadow" id="accordionFlushExample">
+                    <div className='accordian-header bg-white d-flex justify-content-between'>
+                        <h2 className='my-2 mx-2'>Filters</h2>
+                        <a className='text-red mx-2 my-2' href='#'>Clear All</a>
+                    </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header">
-                        <button class="accordion-button bg-primary text-white collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        <button class="accordion-button shadow-none bg-primary text-white collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                             DURATION
                         </button>
                         </h2>
@@ -54,7 +58,7 @@ const CoursesSection = ({state, filteredCourses, onChange}) => {
                     </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header">
-                        <button class="accordion-button bg-primary text-white collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        <button class="accordion-button shadow-none bg-primary text-white collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
                             LEVEL
                         </button>
                         </h2>
@@ -77,7 +81,7 @@ const CoursesSection = ({state, filteredCourses, onChange}) => {
                     </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header">
-                        <button class="accordion-button bg-primary text-white collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        <button class="accordion-button shadow-none bg-primary text-white collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
                             ORGANIZATIONS
                         </button>
                         </h2>
@@ -100,7 +104,7 @@ const CoursesSection = ({state, filteredCourses, onChange}) => {
                     </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header">
-                        <button class="accordion-button bg-primary text-white collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                        <button class="accordion-button shadow-none bg-primary text-white collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
                             SKILLS
                         </button>
                         </h2>

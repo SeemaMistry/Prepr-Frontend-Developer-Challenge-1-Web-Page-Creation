@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React from 'react'
 import CourseCard from './CourseCard'
 import FilterSection from './FilterSection'
 import CategoryMenu from './CategoryMenu'
@@ -11,8 +11,6 @@ const CoursesSection = ({state, filteredCourses, onChange}) => {
         onChange(id)
 
     }
-    const [isClicked, setIsClicked] = useState(false)
-    const onActivate = () => setIsClicked(true)
   
     return (
     <div className='container-xxl'>

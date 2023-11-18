@@ -8,6 +8,8 @@ import {ALL_CONTENT} from './data'
 
 
 function App() {
+  // state for darkMode
+  const [darkModeActivated, setDarkModeActivated] = useState('true')
   // state determines which category of course-cards to display out of 3 categories: labs, challenges, projects
   const [selectedContent, setSelectedContent] = useState('labs')
 
@@ -17,7 +19,7 @@ function App() {
   const filteredCourses = ALL_CONTENT.filter(item => item.category === selectedContent)
 
   return (
-    <div style={{backgroundColor: '#f3f7fc'}}>
+    <div data-bs-theme='dark' style={{backgroundColor: '#f3f7fc'}}>
       <Navbar />
       <HeroSection/>
       <CoursesSection onChange={onChangeHandler} filteredCourses={filteredCourses} state={selectedContent}/>

@@ -6,9 +6,6 @@ import SideMenuOne from './SideMenuOne'
 import SideMenuTwo from './SideMenuTwo'
 
 const CoursesSection = ({state, filteredCourses, onChange}) => {
-    // TODO: conditionally add btn-primary class to clicked buttons using useState
-    // TODO: make the filter dropdown menu with the checkboxes
-
     const setCatergoryHandler = (id) => onChange(id)
   
     return (

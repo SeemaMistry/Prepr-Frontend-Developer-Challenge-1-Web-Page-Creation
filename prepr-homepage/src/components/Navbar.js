@@ -3,8 +3,6 @@ import logo from '../assets/preprLogo.png'
 
 
 const Navbar = () => {
-    // TODO: add dark theme using bootstrap property data-bs-theme="dark"
-    // TODO: change icon colour to light during dark mode
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary sticky-top" >
         <div className="container-fluid">

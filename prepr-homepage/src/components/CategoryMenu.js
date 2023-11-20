@@ -1,24 +1,26 @@
 import React from 'react'
 
-const CategoryMenu = ({selectedCategory, onChange}) => {
+const CategoryMenu = ({selectedCategory, onChange, activateDarkMode}) => {
     const setCatergoryHandler = (e) => {
         onChange(e.target.id)
     }
-
-    const baseBtnClasses = 'btn flex-fill btn-lg shadow-none'
+    activateDarkMode = true
+    const btnClickedDarkMode = activateDarkMode ? 'btn-success' : 'btn-primary'
+    const btnUnclickedDarkMode = activateDarkMode ? 'btn-secondary' : 'btn-light'
+    const baseBtnClasses = `btn flex-fill btn-lg shadow-none`
 
   return (
     <div className='d-flex text-center my-3 shadow' >
-        <button className={`${baseBtnClasses} rounded-end-0  ${selectedCategory === 'labs' ? 'btn-primary' : 'bg-light' }`} id='labs' onClick={setCatergoryHandler}>
+        <button className={`${baseBtnClasses} rounded-end-0  ${selectedCategory === 'labs' ? `${btnClickedDarkMode}` : `${btnUnclickedDarkMode}` }`} id='labs' onClick={setCatergoryHandler}>
             Labs
         </button>
-        <button  className={`${baseBtnClasses} rounded-0 ${selectedCategory === 'challenges' ? 'btn-primary' : 'bg-light' }`} id='challenges' onClick={setCatergoryHandler}>
+        <button  className={`${baseBtnClasses} rounded-0 ${selectedCategory === 'challenges' ? `${btnClickedDarkMode}` : `${btnUnclickedDarkMode}` }`} id='challenges' onClick={setCatergoryHandler}>
             Challenges
         </button>
-        <button className={`${baseBtnClasses} rounded-0 bg-light`}>
+        <button className={`${baseBtnClasses} rounded-0 ${btnUnclickedDarkMode}`}>
             Resources
         </button>
-        <button className={`${baseBtnClasses} rounded-start-0 ${selectedCategory === 'projects' ? 'btn-primary' : 'bg-light' }`} id='projects' onClick={setCatergoryHandler}>
+        <button className={`${baseBtnClasses} rounded-start-0 ${selectedCategory === 'projects' ? `${btnClickedDarkMode}` : `${btnUnclickedDarkMode}` }`} id='projects' onClick={setCatergoryHandler}>
             Projects
         </button>
     </div>

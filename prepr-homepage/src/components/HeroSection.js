@@ -1,12 +1,13 @@
 import React from 'react'
 import Tag from './Tag'
 
-const HeroSection = () => {
+const HeroSection = ({activateDarkMode}) => {
     // map tag titles onto screen 
     const tags = ['Communication', 'Accessibility', 'Business Innovation', 'Plugins', 'QA', 'Android Development', 'Budgeting', 'System Administration', 'Digital Tools', 'Transparency']
-  
+    const bgGradient = activateDarkMode ? 'linear-gradient(to right, grey, cadetblue)' : 'linear-gradient(to right, lightcyan, lightblue)' 
+
     return (
-    <div className='text-center' style={{backgroundImage: 'linear-gradient(to right, lightcyan, lightblue)', height: '40rem'}}>
+    <div className='text-center ' style={{backgroundImage: `${bgGradient}`, height: '40rem'}}>
         <div className='container' style={{padding:'5rem'}}>
             <h1 className='fw-bolder'>Explore Your Interests</h1>
             <p className='mt-3 mb-5'>
@@ -21,7 +22,7 @@ const HeroSection = () => {
                 </div>
             </div>
             <h2 className='mt-3 mb-5 fw-semibold'>Click an interest to narrow your <br></br>recommendations.</h2>
-            {tags.map(tag => <Tag key={`hero-tag-${tag}`}  title={tag}/>)}
+            {tags.map(tag => <Tag key={`hero-tag-${tag}`}  title={tag} activateDarkMode={activateDarkMode}/>)}
 
         </div>
     </div>

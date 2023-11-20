@@ -5,7 +5,6 @@ import challengeLogo from '../assets/challenge_icon.svg'
 import Tag from './Tag'
 
 const CourseCard = ({course, activateDarkMode}) => {
-    activateDarkMode = true
     // set logoIcon by category type
     const logoIcon = course.category === 'labs' ? labLogo : course.category === 'challenges' ? challengeLogo : projectLogo
     const categoryTitle = course.category === 'labs' ? 'Public Lab' : course.category === 'challenges' ? "Pubic Challenge" : "Public"

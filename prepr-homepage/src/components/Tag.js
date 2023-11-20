@@ -1,8 +1,10 @@
 import React from 'react'
 
-const Tag = ({title}) => {
+const Tag = ({title, activateDarkMode}) => {
+  const btnDarkMode = activateDarkMode ? 'btn-outline-light' : 'btn-outline-dark'
+
   return (
-    <button className='btn btn-outline-dark mx-3 my-2'>{title}</button>
+    <button className={`btn mx-3 my-2 ${btnDarkMode}`}>{title}</button>
   )
 }
 

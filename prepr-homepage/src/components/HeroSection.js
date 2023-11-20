@@ -2,9 +2,10 @@ import React from 'react'
 import Tag from './Tag'
 
 const HeroSection = ({activateDarkMode}) => {
+    activateDarkMode = true
     // map tag titles onto screen 
     const tags = ['Communication', 'Accessibility', 'Business Innovation', 'Plugins', 'QA', 'Android Development', 'Budgeting', 'System Administration', 'Digital Tools', 'Transparency']
-    const bgGradient = activateDarkMode ? 'linear-gradient(to right, grey, cadetblue)' : 'linear-gradient(to right, lightcyan, lightblue)' 
+    const bgGradient = activateDarkMode ? 'linear-gradient(to right, grey, mediumseagreen)' : 'linear-gradient(to right, lightcyan, lightblue)' 
 
     return (
     <div className='text-center ' style={{backgroundImage: `${bgGradient}`, height: '40rem'}}>

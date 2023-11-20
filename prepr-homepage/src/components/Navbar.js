@@ -2,7 +2,8 @@ import React from 'react'
 import logo from '../assets/preprLogo.png'
 
 
-const Navbar = () => {
+const Navbar = ({activateDarkMode}) => {
+    const iconDarkMode = activateDarkMode ? 'text-light' : ''
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary sticky-top" >
         <div className="container-fluid">
@@ -29,17 +30,17 @@ const Navbar = () => {
                 </li>
             </ul>
             <div style={{fontSize: '25px'}}>
-                <i className="bi bi-bell-fill mx-2"></i>
-                <i className="bi bi-chat-left-fill mx-2"></i>
-                <i className="bi bi-question-circle-fill mx-2"></i>
+                <i className={`bi bi-bell-fill mx-2 ${iconDarkMode}`}></i>
+                <i className={`bi bi-chat-left-fill mx-2 ${iconDarkMode}`}></i>
+                <i className={`bi bi-question-circle-fill mx-2 ${iconDarkMode}`}></i>
             </div>
             <form className="d-flex" role="search">
                 <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
                 <button className="btn btn-outline-success" type="submit">Search</button>
             </form>
             <div style={{fontSize: '25px'}}>
-                <i className="bi bi-person-square mx-2"></i>
-                <i className="bi bi-grid-3x3-gap-fill mx-2"></i>
+                <i className={`bi bi-person-square mx-2 ${iconDarkMode}`}></i>
+                <i className={`bi bi-grid-3x3-gap-fill mx-2 ${iconDarkMode}`}></i>
             </div>
             </div>
         </div>

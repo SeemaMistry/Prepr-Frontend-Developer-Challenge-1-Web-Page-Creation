@@ -1,16 +1,19 @@
 import React from 'react'
 import Checkbox from './Checkbox'
 
-const SideMenuTwo = () => {
+const SideMenuTwo = ({activateDarkMode}) => {
+    activateDarkMode = true
+    const btnHeadingDarkMode = activateDarkMode ? 'bg-secondary' : 'bg-white'
+    const btnCategoryDarkMode = activateDarkMode ? 'bg-success' : 'bg-light'
   return (
     <div class="accordion accordion-flush shadow" id="accordionFlushExample">
-        <div className='accordian-header bg-white d-flex justify-content-between'>
+        <div className={`accordian-header d-flex justify-content-between ${btnHeadingDarkMode}`}>
             <h2 className='my-2 mx-2'>Filters</h2>
             <a className='text-red mx-2 my-2' href='#'>Clear All</a>
         </div>
         <div class="accordion-item">
             <h2 class="accordion-header">
-            <button class="accordion-button shadow-none bg-primary text-white collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            <button class={`accordion-button shadow-nonetext-white collapsed shadow-none ${btnCategoryDarkMode}`} type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                 DURATION
             </button>
             </h2>
@@ -26,7 +29,7 @@ const SideMenuTwo = () => {
         </div>
         <div class="accordion-item">
             <h2 class="accordion-header">
-            <button class="accordion-button shadow-none bg-primary text-white collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            <button class={`accordion-button shadow-none text-white collapsed shadow-none ${btnCategoryDarkMode}`} type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
                 LEVEL
             </button>
             </h2>
@@ -41,7 +44,7 @@ const SideMenuTwo = () => {
         </div>
         <div class="accordion-item">
             <h2 class="accordion-header">
-            <button class="accordion-button shadow-none bg-primary text-white collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+            <button class={`accordion-button shadow-none text-white collapsed shadow-none ${btnCategoryDarkMode}`} type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
                 ORGANIZATIONS
             </button>
             </h2>
@@ -56,7 +59,7 @@ const SideMenuTwo = () => {
         </div>
         <div class="accordion-item">
             <h2 class="accordion-header">
-            <button class="accordion-button shadow-none bg-primary text-white collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+            <button class={`accordion-button shadow-none text-white collapsed shadow-none ${btnCategoryDarkMode}`} type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
                 SKILLS
             </button>
             </h2>

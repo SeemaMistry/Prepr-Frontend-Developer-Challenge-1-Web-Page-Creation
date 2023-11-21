@@ -8,7 +8,7 @@ const SideMenuOne = ({activateDarkMode}) => {
     const baseBtnClasses = 'btn btn-lg text-start shadow-lg'
     
   return (
-    <div className='d-grid my-5'>
+    <div className='d-grid mb-5'>
         <button className={`${baseBtnClasses} ${btnHeadingDarkMode} rounded-bottom-0`}>Labs</button>
         <button className={`${baseBtnClasses} ${btnCategoryDarkMode} rounded-top-0`}>Lab Programs</button>
     </div>

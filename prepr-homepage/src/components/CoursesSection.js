@@ -13,14 +13,12 @@ const CoursesSection = ({state, filteredCourses, onChange, activateDarkMode}) =>
        <CategoryMenu onChange={setCatergoryHandler} selectedCategory={state} activateDarkMode={activateDarkMode}/>
         <div className='row'>
             <div className="col-2 mx-5 p-0">
-                Conditionally rendered Side Menus 
                 <SideMenuOne activateDarkMode={activateDarkMode}/>
                 <SideMenuTwo activateDarkMode={activateDarkMode}/>
             </div>
             <div className="col-9">
                 <FilterSection activateDarkMode={activateDarkMode}/>
-                <div>
-                    Conditionally rendered CourseCards
+                <div className='my-3'>
                     {filteredCourses.map(item => <CourseCard key={item.id} course={item} activateDarkMode={activateDarkMode}/>)}
                 </div>
             </div>

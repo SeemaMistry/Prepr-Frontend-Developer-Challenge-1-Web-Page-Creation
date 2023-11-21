@@ -10,7 +10,7 @@ const CoursesSection = ({state, filteredCourses, onChange, activateDarkMode}) =>
   
     return (
     <div className='container-xxl'>
-       <CategoryMenu onChange={setCatergoryHandler} selectedCategory={state} />
+       <CategoryMenu onChange={setCatergoryHandler} selectedCategory={state} activateDarkMode={activateDarkMode}/>
         <div className='row'>
             <div className="col-2 mx-5 p-0">
                 Conditionally rendered Side Menus 

@@ -2,9 +2,12 @@ import React from 'react'
 import logo from '../assets/preprLogo.png'
 
 
-const Navbar = ({activateDarkMode}) => {
+const Navbar = ({activateDarkMode, onDarkMode}) => {
     // apply dark mode styling
     const iconDarkMode = activateDarkMode ? 'text-light' : ''
+    const darkModeHandler = () => {
+        onDarkMode()
+    }
     
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary sticky-top" >
@@ -31,6 +34,7 @@ const Navbar = ({activateDarkMode}) => {
                     <button className="nav-link" >Career Explorer</button>
                 </li>
             </ul>
+            <button className='btn btn-secondary' onClick={darkModeHandler}>DARK MODE</button>
             <div style={{fontSize: '25px'}}>
                 <i className={`bi bi-bell-fill mx-2 ${iconDarkMode}`}></i>
                 <i className={`bi bi-chat-left-fill mx-2 ${iconDarkMode}`}></i>

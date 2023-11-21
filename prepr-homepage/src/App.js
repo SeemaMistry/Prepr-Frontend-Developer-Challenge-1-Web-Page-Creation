@@ -16,6 +16,7 @@ function App() {
   const [selectedContent, setSelectedContent] = useState('labs')
 
   const onChangeHandler = (category) => setSelectedContent(category)
+  const onDarkModeHandler = () => {setDarkModeIsActivate(prevState => !prevState)}
 
   // filter courses by state
   const filteredCourses = ALL_CONTENT.filter(item => item.category === selectedContent)
@@ -25,7 +26,7 @@ function App() {
     data-bs-theme={darkModeIsActivate ? 'dark' : ''} 
     style={{backgroundColor: `${bgColorDarkMode}`}}
     >
-      <Navbar activateDarkMode={darkModeIsActivate}/>
+      <Navbar activateDarkMode={darkModeIsActivate} onDarkMode={onDarkModeHandler}/>
       <HeroSection activateDarkMode={darkModeIsActivate}/>
       <CoursesSection onChange={onChangeHandler} filteredCourses={filteredCourses} state={selectedContent} activateDarkMode={darkModeIsActivate}/>
     </div>

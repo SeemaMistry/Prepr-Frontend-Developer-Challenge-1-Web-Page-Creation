@@ -1,7 +1,6 @@
 import React from 'react'
 
 const SideMenuOne = ({activateDarkMode}) => {
-  activateDarkMode = true
     const btnHeadingDarkMode = activateDarkMode ? 'btn-success text-dark' : 'btn-primary'
     const btnCategoryDarkMode = activateDarkMode ? 'btn-secondary' : 'btn-light'
     const baseBtnClasses = 'btn btn-lg text-start shadow-lg'

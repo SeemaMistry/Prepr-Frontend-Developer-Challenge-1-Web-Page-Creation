@@ -2,7 +2,6 @@ import React from 'react'
 import Checkbox from './Checkbox'
 
 const SideMenuTwo = ({activateDarkMode}) => {
-    activateDarkMode = true
     const btnHeadingDarkMode = activateDarkMode ? 'bg-secondary' : 'bg-white'
     const btnCategoryDarkMode = activateDarkMode ? 'bg-success' : 'bg-light'
   return (

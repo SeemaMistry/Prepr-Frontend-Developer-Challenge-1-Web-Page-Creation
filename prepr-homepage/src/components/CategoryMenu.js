@@ -4,7 +4,6 @@ const CategoryMenu = ({selectedCategory, onChange, activateDarkMode}) => {
     const setCatergoryHandler = (e) => {
         onChange(e.target.id)
     }
-    activateDarkMode = true
     const btnClickedDarkMode = activateDarkMode ? 'btn-success' : 'btn-primary'
     const btnUnclickedDarkMode = activateDarkMode ? 'btn-secondary' : 'btn-light'
     const baseBtnClasses = `btn flex-fill btn-lg shadow-none`

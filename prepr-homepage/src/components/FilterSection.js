@@ -1,7 +1,6 @@
 import React from 'react'
 
 const FilterSection = ({activateDarkMode}) => {
-    activateDarkMode = false
     const btnDarkMode = activateDarkMode ? 'btn-light' : 'bg-body-secondary'
     const bgColor = activateDarkMode ? 'bg-body-info' : 'bg-body-secondary'
   return (

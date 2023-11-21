@@ -9,7 +9,9 @@ import {ALL_CONTENT} from './data'
 
 function App() {
   // state for darkMode
-  const [darkModeActivated, setDarkModeActivated] = useState('true')
+  const [darkModeIsActivate, setDarkModeIsActivate] = useState(true)
+  const bgColorDarkMode = darkModeIsActivate ? '#252525' : '#f3f7fc'
+
   // state determines which category of course-cards to display out of 3 categories: labs, challenges, projects
   const [selectedContent, setSelectedContent] = useState('labs')
 
@@ -19,10 +21,13 @@ function App() {
   const filteredCourses = ALL_CONTENT.filter(item => item.category === selectedContent)
 
   return (
-    <div data-bs-theme='dark' style={{backgroundColor: '#f3f7fc'}}>
-      <Navbar />
-      <HeroSection/>
-      <CoursesSection onChange={onChangeHandler} filteredCourses={filteredCourses} state={selectedContent}/>
+    <div 
+    data-bs-theme={darkModeIsActivate ? 'dark' : ''} 
+    style={{backgroundColor: `${bgColorDarkMode}`}}
+    >
+      <Navbar activateDarkMode={darkModeIsActivate}/>
+      <HeroSection activateDarkMode={darkModeIsActivate}/>
+      <CoursesSection onChange={onChangeHandler} filteredCourses={filteredCourses} state={selectedContent} activateDarkMode={darkModeIsActivate}/>
     </div>
   );
 }

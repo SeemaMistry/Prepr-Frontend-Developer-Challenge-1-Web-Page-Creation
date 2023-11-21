@@ -8,6 +8,8 @@ const CourseCard = ({course, activateDarkMode}) => {
     // set logoIcon by category type
     const logoIcon = course.category === 'labs' ? labLogo : course.category === 'challenges' ? challengeLogo : projectLogo
     const categoryTitle = course.category === 'labs' ? 'Public Lab' : course.category === 'challenges' ? "Pubic Challenge" : "Public"
+
+    // apply dark mode styling
     const cardDarkMode = activateDarkMode ? 'text-bg-secondary' : ''
     const btnFollowDarkMode = activateDarkMode ? 'btn-light' : ''
 

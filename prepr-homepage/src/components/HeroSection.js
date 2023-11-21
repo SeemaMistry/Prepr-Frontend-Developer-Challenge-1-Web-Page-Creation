@@ -4,6 +4,8 @@ import Tag from './Tag'
 const HeroSection = ({activateDarkMode}) => {
     // map tag titles onto screen 
     const tags = ['Communication', 'Accessibility', 'Business Innovation', 'Plugins', 'QA', 'Android Development', 'Budgeting', 'System Administration', 'Digital Tools', 'Transparency']
+    
+    // apply dark mode styling
     const bgGradient = activateDarkMode ? 'linear-gradient(to right, grey, mediumseagreen)' : 'linear-gradient(to right, lightcyan, lightblue)' 
 
     return (

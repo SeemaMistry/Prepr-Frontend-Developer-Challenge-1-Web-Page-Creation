@@ -1,6 +1,7 @@
 import React from 'react'
 
 const Tag = ({title, activateDarkMode}) => {
+  // apply dark mode styling
   const btnDarkMode = activateDarkMode ? 'btn-outline-light' : 'btn-outline-dark'
 
   return (

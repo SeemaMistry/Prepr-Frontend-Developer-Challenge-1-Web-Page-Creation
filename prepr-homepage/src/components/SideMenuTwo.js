@@ -2,8 +2,10 @@ import React from 'react'
 import Checkbox from './Checkbox'
 
 const SideMenuTwo = ({activateDarkMode}) => {
+    // apply dark mode styling
     const btnHeadingDarkMode = activateDarkMode ? 'bg-secondary' : 'bg-white'
     const btnCategoryDarkMode = activateDarkMode ? 'bg-success' : 'bg-light'
+    
   return (
     <div class="accordion accordion-flush shadow" id="accordionFlushExample">
         <div className={`accordian-header d-flex justify-content-between ${btnHeadingDarkMode}`}>

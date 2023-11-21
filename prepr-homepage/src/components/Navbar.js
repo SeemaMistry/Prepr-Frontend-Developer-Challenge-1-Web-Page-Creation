@@ -3,7 +3,9 @@ import logo from '../assets/preprLogo.png'
 
 
 const Navbar = ({activateDarkMode}) => {
+    // apply dark mode styling
     const iconDarkMode = activateDarkMode ? 'text-light' : ''
+    
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary sticky-top" >
         <div className="container-fluid">

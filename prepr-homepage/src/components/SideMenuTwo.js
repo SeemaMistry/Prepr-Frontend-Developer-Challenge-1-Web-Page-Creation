@@ -4,7 +4,7 @@ import Checkbox from './Checkbox'
 const SideMenuTwo = ({activateDarkMode}) => {
     // apply dark mode styling
     const btnHeadingDarkMode = activateDarkMode ? 'bg-secondary' : 'bg-white'
-    const btnCategoryDarkMode = activateDarkMode ? 'bg-success' : 'bg-light'
+    const btnCategoryDarkMode = activateDarkMode ? 'bg-success' : 'bg-primary'
     
   return (
     <div class="accordion accordion-flush shadow" id="accordionFlushExample">
@@ -14,7 +14,7 @@ const SideMenuTwo = ({activateDarkMode}) => {
         </div>
         <div class="accordion-item">
             <h2 class="accordion-header">
-            <button class={`accordion-button shadow-nonetext-white collapsed shadow-none ${btnCategoryDarkMode}`} type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            <button class={`accordion-button shadow-none text-white collapsed shadow-none ${btnCategoryDarkMode}`} type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                 DURATION
             </button>
             </h2>

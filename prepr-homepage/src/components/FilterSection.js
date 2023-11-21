@@ -4,6 +4,7 @@ const FilterSection = ({activateDarkMode}) => {
     // apply dark mode styling
     const btnDarkMode = activateDarkMode ? 'btn-light' : 'bg-body-secondary'
     const bgColor = activateDarkMode ? 'bg-body-info' : 'bg-body-secondary'
+    
   return (
     <div className={`d-flex justify-content-between p-4 rounded shadow ${bgColor}`} >
         <form className='d-flex' role="search">

@@ -5,7 +5,7 @@ import CategoryMenu from './CategoryMenu'
 import SideMenuOne from './SideMenuOne'
 import SideMenuTwo from './SideMenuTwo'
 
-const CoursesSection = ({state, filteredCourses, onChange}) => {
+const CoursesSection = ({state, filteredCourses, onChange, activateDarkMode}) => {
     const setCatergoryHandler = (id) => onChange(id)
   
     return (
@@ -21,7 +21,7 @@ const CoursesSection = ({state, filteredCourses, onChange}) => {
                 <FilterSection />
                 <div>
                     Conditionally rendered CourseCards
-                    {filteredCourses.map(item => <CourseCard key={item.id} course={item}/>)}
+                    {filteredCourses.map(item => <CourseCard key={item.id} course={item} activateDarkMode={activateDarkMode}/>)}
                 </div>
             </div>
         </div>

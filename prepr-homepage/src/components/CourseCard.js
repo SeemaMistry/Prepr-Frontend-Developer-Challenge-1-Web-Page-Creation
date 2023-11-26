@@ -31,7 +31,7 @@ const CourseCard = ({course, activateDarkMode}) => {
             <div className="col-md-8" >
                 <div className="card-body">
                     <div className='d-flex justify-content-between'>
-                        <h5 className="card-title">{course.title}</h5>
+                        <h5 className="card-title fs-1 fw-bold">{course.title}</h5>
                         {course.category === 'labs' ? <button className={`btn btn-primary ${btnFollowDarkMode}`}>+ Follow</button> : ''}
                     </div>
                     <p className="card-text">

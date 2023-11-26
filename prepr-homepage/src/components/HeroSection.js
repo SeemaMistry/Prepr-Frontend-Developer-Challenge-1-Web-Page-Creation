@@ -9,7 +9,7 @@ const HeroSection = ({activateDarkMode}) => {
     const bgGradient = activateDarkMode ? 'linear-gradient(to right, grey, mediumseagreen)' : 'linear-gradient(to right, lightcyan, lightblue)' 
 
     return (
-    <div className='text-center ' style={{backgroundImage: `${bgGradient}`, height: '40rem'}}>
+    <div className='text-center' style={{backgroundImage: `${bgGradient}`, height: '100%'}}>
         <div className='container' style={{padding:'5rem'}}>
             <h1 className='fw-bolder'>Explore Your Interests</h1>
             <p className='mt-3 mb-5'>

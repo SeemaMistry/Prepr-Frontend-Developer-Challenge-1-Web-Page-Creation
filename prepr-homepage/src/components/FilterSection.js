@@ -3,11 +3,11 @@ import React from 'react'
 const FilterSection = ({activateDarkMode}) => {
     // apply dark mode styling
     const btnDarkMode = activateDarkMode ? 'btn-light' : 'bg-body-secondary'
-    const bgColor = activateDarkMode ? 'bg-body-secondary' : 'bg-body-secondary'
+    const bgColor = activateDarkMode ? 'bg-body-secondary' : 'bg-white'
     const dropDownLabel = activateDarkMode ? 'text-white' : 'text-dark'
     
   return (
-    <div className={`d-flex justify-content-between rounded shadow ${bgColor}`} >
+    <div className={`p-3 my-3 d-flex justify-content-between rounded shadow ${bgColor}`} >
         <form className='d-flex' role="search">
             <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
             <button className="btn btn-outline-success" type="button">Search</button>

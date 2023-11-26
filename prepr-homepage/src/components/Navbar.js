@@ -34,7 +34,7 @@ const Navbar = ({activateDarkMode, onDarkMode}) => {
                     <button className="nav-link" >Career Explorer</button>
                 </li>
             </ul>
-            <button className='btn btn-secondary' onClick={darkModeHandler}>DARK MODE</button>
+            <button className='btn btn-secondary' onClick={darkModeHandler}>{ activateDarkMode ? 'DARK MODE' : 'LIGHT MODE'}</button>
             <div style={{fontSize: '25px'}}>
                 <i className={`bi bi-bell-fill mx-2 ${iconDarkMode}`}></i>
                 <i className={`bi bi-chat-left-fill mx-2 ${iconDarkMode}`}></i>

@@ -7,7 +7,7 @@ const FilterSection = ({activateDarkMode}) => {
     const dropDownLabel = activateDarkMode ? 'text-white' : 'text-dark'
     
   return (
-    <div className={`d-flex justify-content-between p-4 rounded shadow ${bgColor}`} >
+    <div className={`d-flex justify-content-between rounded shadow ${bgColor}`} >
         <form className='d-flex' role="search">
             <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
             <button className="btn btn-outline-success" type="button">Search</button>

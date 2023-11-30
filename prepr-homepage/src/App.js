@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import Navbar from "./components/Navbar";
 import HeroSection from "./components/HeroSection";
 import CoursesSection from "./components/CoursesSection";
@@ -21,11 +21,33 @@ function App() {
   // filter courses by state
   const filteredCourses = ALL_CONTENT.filter(item => item.category === selectedContent)
 
+  // content scaling
+  const [scale, setScale] = useState(100)
+  const increaseScale = () => {
+    if (scale < 200) {
+      setScale(scale + 1)
+    }
+  }
+  const decreaseScale = () => {
+    if (scale > 0) {
+      setScale(scale - 1)
+    }
+  }
+  useEffect ( () => {
+    if(scale === 0){
+      setScale('none')
+    }
+    document.body.style.zoom = `${scale}%`
+
+  },[scale])
+
   return (
     <div 
     data-bs-theme={darkModeIsActivate ? 'dark' : ''} 
     style={{backgroundColor: `${bgColorDarkMode}`}}
     >
+       <button className="btn btn-warning btn-lg" onClick={increaseScale}>Increase</button>
+      <button className="btn btn-warning btn-lg" onClick={decreaseScale}>decrease</button>
       <Navbar activateDarkMode={darkModeIsActivate} onDarkMode={onDarkModeHandler}/>
       <HeroSection activateDarkMode={darkModeIsActivate}/>
       <CoursesSection onChange={onChangeHandler} filteredCourses={filteredCourses} state={selectedContent} activateDarkMode={darkModeIsActivate}/>

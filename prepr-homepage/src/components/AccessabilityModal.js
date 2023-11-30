@@ -38,8 +38,19 @@ const AccessabilityModal = () => {
         setActivateResetSettings(false) // reset to false!!
     },[activateDefaultSettings])
 
+    // set modal styling
+    const MODAL_STYLES = {
+        position: 'fixed',
+        top: '50%',
+        left: '50%',
+        transform: 'translate(-100%, 150%)',
+        backgroundColor: 'white',
+        padding: '50px',
+        zIndex: 1000
+    } 
+
   return ReactDom.createPortal(
-    <div>
+    <div style={MODAL_STYLES}>
         <button className="btn btn-warning btn-lg" onClick={defaultReset}>Reset</button>
         <button className="btn btn-warning btn-lg" onClick={increaseScale}>Increase</button>
         <button className="btn btn-warning btn-lg" onClick={decreaseScale}>decrease</button>

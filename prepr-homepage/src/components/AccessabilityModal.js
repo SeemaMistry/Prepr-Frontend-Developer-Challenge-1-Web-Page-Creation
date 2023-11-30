@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react'
+import ReactDom from 'react-dom'
 
 const AccessabilityModal = () => {
     // reset to default values 
@@ -37,12 +38,13 @@ const AccessabilityModal = () => {
         setActivateResetSettings(false) // reset to false!!
     },[activateDefaultSettings])
 
-  return (
+  return ReactDom.createPortal(
     <div>
         <button className="btn btn-warning btn-lg" onClick={defaultReset}>Reset</button>
         <button className="btn btn-warning btn-lg" onClick={increaseScale}>Increase</button>
         <button className="btn btn-warning btn-lg" onClick={decreaseScale}>decrease</button>
-    </div>
+    </div>,
+    document.getElementById("accessability-modal")
   )
 }
 

@@ -35,6 +35,8 @@ const AccessabilityModal = () => {
         setScale(100)
         }
         document.body.style.zoom = `${scale}%`
+        // document.getElementById("accessability-modal").style.zoom(100)
+        // document.getElementById('root').style.zoom = `${scale}%`
         setActivateResetSettings(false) // reset to false!!
     },[activateDefaultSettings])
 
@@ -43,14 +45,14 @@ const AccessabilityModal = () => {
         position: 'fixed',
         top: '50%',
         left: '50%',
-        transform: 'translate(-100%, 150%)',
+        // transform: 'translate(-100%, 125%)',
         backgroundColor: 'white',
         padding: '50px',
-        zIndex: 1000
+        zIndex: 1000,
     } 
 
   return ReactDom.createPortal(
-    <div style={MODAL_STYLES}>
+    <div className='container-xs' style={MODAL_STYLES}>
         <button className="btn btn-warning btn-lg" onClick={defaultReset}>Reset</button>
         <button className="btn btn-warning btn-lg" onClick={increaseScale}>Increase</button>
         <button className="btn btn-warning btn-lg" onClick={decreaseScale}>decrease</button>

@@ -23,18 +23,12 @@ function App() {
   // filter courses by state
   const filteredCourses = ALL_CONTENT.filter(item => item.category === selectedContent)
 
-  // open and close the accessability modal
-  const [modalActive, setModalActive] = useState(false)
-
-  const openModal = () => setModalActive(prevState => !prevState)
-
   return (
     <div 
     data-bs-theme={darkModeIsActivate ? 'dark' : ''} 
     style={{backgroundColor: `${bgColorDarkMode}`}}
     >
-      <button onClick={openModal}>Open Accessability Modal</button>
-      {modalActive && <AccessabilityModal/>}
+      <AccessabilityModal/>
       <Navbar activateDarkMode={darkModeIsActivate} onDarkMode={onDarkModeHandler}/>
       <HeroSection activateDarkMode={darkModeIsActivate}/>
       <CoursesSection onChange={onChangeHandler} filteredCourses={filteredCourses} state={selectedContent} activateDarkMode={darkModeIsActivate}/>

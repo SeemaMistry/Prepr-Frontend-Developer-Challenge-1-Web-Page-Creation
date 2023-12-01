@@ -39,13 +39,12 @@ const AccessabilityModal = () => {
     },[activateDefaultSettings])
 
     // set modal styling
-    const MODAL_STYLES = {
+    const MODAL_BTN_STYLES = {
         position: 'fixed',
-        top: '50%',
-        left: '50%',
+        top: '20%',
         // transform: 'translate(-100%, 125%)',
-        backgroundColor: 'white',
-        padding: '50px',
+        borderRadius: '50%',
+        padding: '10px',
         zIndex: 1000,
     } 
     
@@ -63,8 +62,8 @@ const AccessabilityModal = () => {
     //     </div>
     // </div>
     <>
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-  Launch static backdrop modal
+    <button type="button" class="btn btn-success px-3 " style={MODAL_BTN_STYLES} data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+    <i class="bi bi-person-wheelchair fs-3"></i>
 </button>
 
 

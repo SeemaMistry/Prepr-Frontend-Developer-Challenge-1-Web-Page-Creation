@@ -74,20 +74,14 @@ const AccessabilityModal = () => {
                         <button className='btn rounded-5 btn-light '>Statement</button>
                         <button className='btn rounded-5 btn-light mx-2'>Hide Interface</button>
                     </div>
-                    <form class="d-flex mt-4 mb-2" role="search">
+                    <form class="d-flex mt-4 mb-4" role="search">
                         <input class="form-control me-2 rounded-5" type="search" 
                         placeholder="Unclear content? Search in dictionary..." 
                         aria-label="Search"/>
                     </form>
 
                 </div>
-                
-                <div class="modal-body bg-success d-flex justify-content-evenly">                  
-                        
-                </div>
-                <div class="modal-body bg-success">                  
-                   
-                </div>
+
             <div class="modal-body">
                 
                 <button className="btn btn-warning btn-lg" onClick={increaseScale}>Increase</button>

@@ -1,8 +1,9 @@
-import React, {useState, useEffect} from "react";
+import React, {useState} from "react";
 import Navbar from "./components/Navbar";
 import HeroSection from "./components/HeroSection";
 import CoursesSection from "./components/CoursesSection";
 import AccessabilityModal from "./components/AccessabilityModal";
+// import './App.css'
 
 // Dummy data for course cards
 import {ALL_CONTENT} from './data'

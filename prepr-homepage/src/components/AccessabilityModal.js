@@ -58,23 +58,35 @@ const AccessabilityModal = () => {
     <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-scrollable">
             <div class="modal-content">
-                <div class="modal-header bg-success ">
+                <div class="modal-header bg-success d-block">
                     <div className='d-flex'>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        <h1 class="modal-title fs-5 text-white px-3 py-4" id="staticBackdropLabel">Accessability Adjustments</h1>
+                        <select class="form-select" style={{marginLeft: '50%'}} aria-label="Default select example">
+                            <option selected>English</option>
+                            <option value="1">French</option>
+                            <option value="2">Deutsch</option>
+                            <option value="3">Spanish</option>
+                        </select>
                     </div>
-                </div>
-                <div class="modal-body bg-success d-flex justify-content-evenly">                  
+                    <h1 class="modal-title fs-2 text-white text-center px-3 py-4" id="staticBackdropLabel">Accessability Adjustments</h1>
+                    <div className='bg-success d-flex justify-content-evenly'>
                         <button className="btn rounded-5 btn-light mx-2" onClick={defaultReset}>Reset Settings</button>
                         <button className='btn rounded-5 btn-light '>Statement</button>
                         <button className='btn rounded-5 btn-light mx-2'>Hide Interface</button>
-                </div>
-                <div class="modal-body bg-success">                  
-                    <form class="d-flex" role="search">
+                    </div>
+                    <form class="d-flex mt-4 mb-2" role="search">
                         <input class="form-control me-2 rounded-5" type="search" 
                         placeholder="Unclear content? Search in dictionary..." 
                         aria-label="Search"/>
                     </form>
+
+                </div>
+                
+                <div class="modal-body bg-success d-flex justify-content-evenly">                  
+                        
+                </div>
+                <div class="modal-body bg-success">                  
+                   
                 </div>
             <div class="modal-body">
                 

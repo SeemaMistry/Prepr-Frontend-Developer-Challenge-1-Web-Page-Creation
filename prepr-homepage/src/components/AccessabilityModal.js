@@ -86,7 +86,28 @@ const AccessabilityModal = () => {
 
             <div class="modal-body bg-light">
                 <ModalAdjustmentContainer title='Choose the right accessability profile for you'>
-
+                    <div class="form-check form-switch form-check fs-1 d-flex justify-content-between">
+                        <input class="form-check-input" type="checkbox" id="flexSwitchCheck"/>
+                        <label class="form-check-label" for="flexSwitchCheck">
+                            <p className='fs-5 m-0 p-0'>
+                                Seizure Safe Profile<br></br>
+                                <span className='fs-6 text-secondary'>Clear flashes & reduces color</span>
+                            </p>
+                        </label>
+                        <i className='bi bi-lightning-charge bg-light px-3' style={{borderRadius: '50%'}}></i>
+                    </div>
+                    <hr></hr>
+                    <div class="form-check form-switch form-check fs-1 d-flex justify-content-between">
+                        <input class="form-check-input" type="checkbox" id="flexSwitchCheck"/>
+                        <label class="form-check-label" for="flexSwitchCheck">
+                            <p className='fs-5 m-0 p-0'>
+                            Cognitive Disability Profile<br></br>
+                                <span className='fs-6 text-secondary'>Assists with reading and focusing</span>
+                            </p>
+                        </label>
+                        <i className='bi bi-crosshair bg-light px-3' style={{borderRadius: '50%'}}></i>
+                    </div>
+                    <hr></hr>
                 </ModalAdjustmentContainer>
                 <ModalAdjustmentContainer title='Content Adjustments'>
                     <div className={`rounded bg-light p-3 m-3 text-center`}>

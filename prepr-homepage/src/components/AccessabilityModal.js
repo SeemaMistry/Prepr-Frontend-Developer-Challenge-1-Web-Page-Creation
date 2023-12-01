@@ -1,5 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import ReactDom from 'react-dom'
+import ModalAdjustmentContainer from './ModalAdjustmentContainer'
+import ModalAdjustmentButton from './ModalAdjustmentButton'
 
 const AccessabilityModal = () => {
     // reset to default values 
@@ -82,14 +84,44 @@ const AccessabilityModal = () => {
 
                 </div>
 
-            <div class="modal-body">
+            <div class="modal-body bg-light">
                 
-                <button className="btn btn-warning btn-lg" onClick={increaseScale}>Increase</button>
-                <button className="btn btn-warning btn-lg" onClick={decreaseScale}>decrease</button>
-                    {/* modal content starts */}
-                    {/* modal content starts */}
+                
+                    <ModalAdjustmentContainer title='Choose the right accessability profile for you'>
 
+                    </ModalAdjustmentContainer>
+                    <ModalAdjustmentContainer title='Content Adjustments'>
+                        <button className="btn btn-warning btn-lg" onClick={increaseScale}>Increase</button>
+                        <button className="btn btn-warning btn-lg" onClick={decreaseScale}>decrease</button>
+                        <div className='d-flex'>
+                        <ModalAdjustmentButton label='Align Center' icon='bi-text-center'/>
+                        <ModalAdjustmentButton label='Align Left' icon='bi-text-left'/>
+                        </div>
+                    </ModalAdjustmentContainer>
+                    
+                    <ModalAdjustmentContainer title='Color Adjustments'>
+                        <div className='d-flex'>
+                            <ModalAdjustmentButton label='Dark Contrast' icon='bi-moon'/>
+                            <ModalAdjustmentButton label='Light Contrast' icon='bi-brightness-low'/>
+                            
+                        </div>
+                        <div className='d-flex'>
+                            <ModalAdjustmentButton label='High Contrast' icon='bi-circle-half'/>
+                            <ModalAdjustmentButton label='High Saturation' icon='bi-droplet-half'/>
+                        </div>
+                    </ModalAdjustmentContainer>
 
+                    <ModalAdjustmentContainer title='Orientation Adjustments'>
+                        <div className='d-flex'>
+                            <ModalAdjustmentButton label='Mute Sound' icon='bi-volume-mute'/>
+                            <ModalAdjustmentButton label='Hide Image' icon='bi-image'/>
+                            
+                        </div>
+                        <div className='d-flex'>
+                            <ModalAdjustmentButton label='Stop Animation' icon='bi-lightning-charge'/>
+                            <ModalAdjustmentButton label='Highlight Focus' icon='bi-crosshair'/>
+                        </div>
+                    </ModalAdjustmentContainer>
             </div>
             <div class="modal-footer bg-success text-white">
                 <span>Web Accessability By accessiBe</span>

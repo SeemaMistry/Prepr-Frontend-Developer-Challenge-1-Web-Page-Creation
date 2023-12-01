@@ -35,8 +35,6 @@ const AccessabilityModal = () => {
         setScale(100)
         }
         document.body.style.zoom = `${scale}%`
-        // document.getElementById("accessability-modal").style.zoom(100)
-        // document.getElementById('root').style.zoom = `${scale}%`
         setActivateResetSettings(false) // reset to false!!
     },[activateDefaultSettings])
 
@@ -50,13 +48,52 @@ const AccessabilityModal = () => {
         padding: '50px',
         zIndex: 1000,
     } 
+    
 
   return ReactDom.createPortal(
-    <div className='container-xs' style={MODAL_STYLES}>
-        <button className="btn btn-warning btn-lg" onClick={defaultReset}>Reset</button>
-        <button className="btn btn-warning btn-lg" onClick={increaseScale}>Increase</button>
-        <button className="btn btn-warning btn-lg" onClick={decreaseScale}>decrease</button>
-    </div>,
+    // <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+
+    //     <div className=' modal-dialog modal-dialog-scrollable' >
+    //     {/* <div className='modal-dialog modal-dialog-scrollable'> */}
+    //     <div class="modal-content">
+    //         <button className="btn btn-warning btn-lg" onClick={defaultReset}>Reset</button>
+    //         <button className="btn btn-warning btn-lg" onClick={increaseScale}>Increase</button>
+    //         <button className="btn btn-warning btn-lg" onClick={decreaseScale}>decrease</button>
+    //         </div>
+    //     </div>
+    // </div>
+    <>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+  Launch static backdrop modal
+</button>
+
+
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header bg-success">
+        <h1 class="modal-title fs-5 text-white  " id="staticBackdropLabel">Accessability Adjustments</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      <button className="btn btn-warning btn-lg" onClick={defaultReset}>Reset</button>
+    <button className="btn btn-warning btn-lg" onClick={increaseScale}>Increase</button>
+    <button className="btn btn-warning btn-lg" onClick={decreaseScale}>decrease</button>
+        {/* modal content starts */}
+        {/* modal content starts */}
+
+
+      </div>
+      <div class="modal-footer bg-success text-white">
+        <span>Web Accessability By accessiBe</span>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </>
+    ,
     document.getElementById("accessability-modal")
   )
 }

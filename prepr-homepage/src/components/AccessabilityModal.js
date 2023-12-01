@@ -91,8 +91,17 @@ const AccessabilityModal = () => {
 
                     </ModalAdjustmentContainer>
                     <ModalAdjustmentContainer title='Content Adjustments'>
-                        <button className="btn btn-warning btn-lg" onClick={increaseScale}>Increase</button>
-                        <button className="btn btn-warning btn-lg" onClick={decreaseScale}>decrease</button>
+                    <div className={`rounded bg-light p-3 m-3 text-center`}>
+                        <div className='d-flex justify-content-center'>
+                            <i class="bi bi-arrows-fullscreen"></i>
+                            <p className='mx-4'>Content Scaling</p>
+                        </div>
+                        <div className='d-flex justify-content-center'>
+                        <button className="btn btn-success" style={{borderRadius: '50%'}} onClick={increaseScale}>^</button>
+                        <div className='bg-white text-success' style={{padding: '0px 10px'}}><p>increase or decrease</p></div>
+                        <button className="btn btn-success" style={{borderRadius: '50%'}} onClick={decreaseScale}>v</button>
+                        </div>
+                      </div>  
                         <div className='d-flex'>
                         <ModalAdjustmentButton label='Align Center' icon='bi-text-center'/>
                         <ModalAdjustmentButton label='Align Left' icon='bi-text-left'/>

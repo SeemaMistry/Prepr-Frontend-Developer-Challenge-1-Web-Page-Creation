@@ -1,5 +1,5 @@
 # Prepr-Frontend-Developer-Challenges 
-## Challenge 1 Web Page Creation & Challenge 2 Accessability Integration 
+## Challenge 1 Web Page Creation & Challenge 4 Accessability Integration 
 A recreation of https://preprlabs.org/explore page (after login) made with React and Bootstrap.
 
 Using React, Course Cards are conditionally rendered under the Labs, Challenges, and Projects menu bar (under hero section).

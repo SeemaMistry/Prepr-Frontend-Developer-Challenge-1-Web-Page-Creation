@@ -50,46 +50,48 @@ const AccessabilityModal = () => {
     
 
   return ReactDom.createPortal(
-    // <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-
-    //     <div className=' modal-dialog modal-dialog-scrollable' >
-    //     {/* <div className='modal-dialog modal-dialog-scrollable'> */}
-    //     <div class="modal-content">
-    //         <button className="btn btn-warning btn-lg" onClick={defaultReset}>Reset</button>
-    //         <button className="btn btn-warning btn-lg" onClick={increaseScale}>Increase</button>
-    //         <button className="btn btn-warning btn-lg" onClick={decreaseScale}>decrease</button>
-    //         </div>
-    //     </div>
-    // </div>
     <>
     <button type="button" class="btn btn-success px-3 " style={MODAL_BTN_STYLES} data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-    <i class="bi bi-person-wheelchair fs-3"></i>
-</button>
+        <i class="bi bi-person-wheelchair fs-3"></i>
+    </button>
+
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header bg-success ">
+                    <div className='d-flex'>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <h1 class="modal-title fs-5 text-white px-3 py-4" id="staticBackdropLabel">Accessability Adjustments</h1>
+                    </div>
+                </div>
+                <div class="modal-body bg-success d-flex justify-content-evenly">                  
+                        <button className="btn rounded-5 btn-light mx-2" onClick={defaultReset}>Reset Settings</button>
+                        <button className='btn rounded-5 btn-light '>Statement</button>
+                        <button className='btn rounded-5 btn-light mx-2'>Hide Interface</button>
+                </div>
+                <div class="modal-body bg-success">                  
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2 rounded-5" type="search" 
+                        placeholder="Unclear content? Search in dictionary..." 
+                        aria-label="Search"/>
+                    </form>
+                </div>
+            <div class="modal-body">
+                
+                <button className="btn btn-warning btn-lg" onClick={increaseScale}>Increase</button>
+                <button className="btn btn-warning btn-lg" onClick={decreaseScale}>decrease</button>
+                    {/* modal content starts */}
+                    {/* modal content starts */}
 
 
-<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-scrollable">
-    <div class="modal-content">
-      <div class="modal-header bg-success">
-        <h1 class="modal-title fs-5 text-white  " id="staticBackdropLabel">Accessability Adjustments</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-      <button className="btn btn-warning btn-lg" onClick={defaultReset}>Reset</button>
-    <button className="btn btn-warning btn-lg" onClick={increaseScale}>Increase</button>
-    <button className="btn btn-warning btn-lg" onClick={decreaseScale}>decrease</button>
-        {/* modal content starts */}
-        {/* modal content starts */}
-
-
-      </div>
-      <div class="modal-footer bg-success text-white">
-        <span>Web Accessability By accessiBe</span>
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-      </div>
+            </div>
+            <div class="modal-footer bg-success text-white">
+                <span>Web Accessability By accessiBe</span>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+            </div>
+        </div>
     </div>
-  </div>
-</div>
 
     </>
     ,

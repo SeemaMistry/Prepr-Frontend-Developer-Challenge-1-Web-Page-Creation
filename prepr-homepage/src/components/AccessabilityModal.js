@@ -85,52 +85,50 @@ const AccessabilityModal = () => {
                 </div>
 
             <div class="modal-body bg-light">
-                
-                
-                    <ModalAdjustmentContainer title='Choose the right accessability profile for you'>
+                <ModalAdjustmentContainer title='Choose the right accessability profile for you'>
 
-                    </ModalAdjustmentContainer>
-                    <ModalAdjustmentContainer title='Content Adjustments'>
+                </ModalAdjustmentContainer>
+                <ModalAdjustmentContainer title='Content Adjustments'>
                     <div className={`rounded bg-light p-3 m-3 text-center`}>
                         <div className='d-flex justify-content-center'>
                             <i class="bi bi-arrows-fullscreen"></i>
                             <p className='mx-4'>Content Scaling</p>
                         </div>
                         <div className='d-flex justify-content-center'>
-                        <button className="btn btn-success" style={{borderRadius: '50%'}} onClick={increaseScale}>^</button>
-                        <div className='bg-white text-success' style={{padding: '0px 10px'}}><p>increase or decrease</p></div>
-                        <button className="btn btn-success" style={{borderRadius: '50%'}} onClick={decreaseScale}>v</button>
+                            <button className="btn btn-success" style={{borderRadius: '50%'}} onClick={increaseScale}>^</button>
+                            <div className='bg-white text-success' style={{padding: '0px 10px'}}><p>increase or decrease</p></div>
+                            <button className="btn btn-success" style={{borderRadius: '50%'}} onClick={decreaseScale}>v</button>
                         </div>
-                      </div>  
-                        <div className='d-flex'>
+                    </div>  
+                    <div className='d-flex'>
                         <ModalAdjustmentButton label='Align Center' icon='bi-text-center'/>
                         <ModalAdjustmentButton label='Align Left' icon='bi-text-left'/>
-                        </div>
-                    </ModalAdjustmentContainer>
+                    </div>
+                </ModalAdjustmentContainer>
                     
-                    <ModalAdjustmentContainer title='Color Adjustments'>
-                        <div className='d-flex'>
-                            <ModalAdjustmentButton label='Dark Contrast' icon='bi-moon'/>
-                            <ModalAdjustmentButton label='Light Contrast' icon='bi-brightness-low'/>
-                            
-                        </div>
-                        <div className='d-flex'>
-                            <ModalAdjustmentButton label='High Contrast' icon='bi-circle-half'/>
-                            <ModalAdjustmentButton label='High Saturation' icon='bi-droplet-half'/>
-                        </div>
-                    </ModalAdjustmentContainer>
+                <ModalAdjustmentContainer title='Color Adjustments'>
+                    <div className='d-flex'>
+                        <ModalAdjustmentButton label='Dark Contrast' icon='bi-moon'/>
+                        <ModalAdjustmentButton label='Light Contrast' icon='bi-brightness-low'/>
+                        
+                    </div>
+                    <div className='d-flex'>
+                        <ModalAdjustmentButton label='High Contrast' icon='bi-circle-half'/>
+                        <ModalAdjustmentButton label='High Saturation' icon='bi-droplet-half'/>
+                    </div>
+                </ModalAdjustmentContainer>
 
-                    <ModalAdjustmentContainer title='Orientation Adjustments'>
-                        <div className='d-flex'>
-                            <ModalAdjustmentButton label='Mute Sound' icon='bi-volume-mute'/>
-                            <ModalAdjustmentButton label='Hide Image' icon='bi-image'/>
-                            
-                        </div>
-                        <div className='d-flex'>
-                            <ModalAdjustmentButton label='Stop Animation' icon='bi-lightning-charge'/>
-                            <ModalAdjustmentButton label='Highlight Focus' icon='bi-crosshair'/>
-                        </div>
-                    </ModalAdjustmentContainer>
+                <ModalAdjustmentContainer title='Orientation Adjustments'>
+                    <div className='d-flex'>
+                        <ModalAdjustmentButton label='Mute Sound' icon='bi-volume-mute'/>
+                        <ModalAdjustmentButton label='Hide Image' icon='bi-image'/>
+                        
+                    </div>
+                    <div className='d-flex'>
+                        <ModalAdjustmentButton label='Stop Animation' icon='bi-lightning-charge'/>
+                        <ModalAdjustmentButton label='Highlight Focus' icon='bi-crosshair'/>
+                    </div>
+                </ModalAdjustmentContainer>
             </div>
             <div class="modal-footer bg-success text-white">
                 <span>Web Accessability By accessiBe</span>

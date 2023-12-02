@@ -15,7 +15,7 @@ An accessability modal is implemented with page scaling (zoom in and out), langu
   
 ## Screenshots
 Accessability Modal (Challenge 4)
-![Light Mode](images/explorePageModal.png "Light Mode")
+![Accessability Modal](images/explorePageModal.png "Accessability Modal")
 
 Light Mode (Challenge 1)
 ![Light Mode](images/explorePageLightMode.png "Light Mode")

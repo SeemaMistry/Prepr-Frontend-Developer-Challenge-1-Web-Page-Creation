@@ -12,7 +12,12 @@ An accessability modal is implemented with page scaling (zoom in and out), langu
 - React
 - Bootstrap
 - Visual Studio Code
+
+## Video Demos
+- Challenge 1 video demo <a href='https://drive.google.com/file/d/1c1r2GgEg3xMDcZosnn20JtS8ItAn69Zw/view?usp=sharing'>Click here</a> 
   
+- Challenge 4 video demo <a href='https://drive.google.com/file/d/1ClQnMI28slEyjFWBc2ygDAmYv7td1qTn/view'>Click here</a> 
+
 ## Screenshots
 Accessability Modal (Challenge 4)
 ![Accessability Modal](images/explorePageModal.png "Accessability Modal")
